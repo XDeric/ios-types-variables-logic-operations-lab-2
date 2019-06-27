@@ -20,7 +20,18 @@ var grade1 = 7.0
 var grade2 = 9.0
 var grade3 = 5.0
 
-// your code here
+// var grade1 = Double (7.0)
+var grade2 = Double (9.0)
+var grade3 = Double (5.0)
+var yourGrade: Double = (10.0)
+
+var averageGrade = (grade1 + grade2 + grade3) / 3
+if (yourGrade > averageGrade ){
+print("Above Average")
+}
+else{
+print("Below Average")
+}
 ```
 
 ***
@@ -31,7 +42,13 @@ You are given a number. Print even if the number is even or odd otherwise.
 ```swift
 let number = 2
 
-// your code here
+// let number = 2
+if (number % 2 == 0){
+print("Even")
+}
+else{
+print("odd")
+}
 ```
 
 ***
@@ -43,7 +60,16 @@ You are given two numbers `a` and `b`. Print `"divisible"` if `a` is divisible b
 var a = 12
 var b = 3
 
-// code here
+//
+var a = 12
+var b = 3
+
+if (a % b == 0){
+print("divisible")
+}
+else{
+print("not divisible")
+}
 ```
 
 ***
@@ -56,7 +82,16 @@ var a = 2
 var b = 3
 var c = 2
 
-// your code here
+// var a = 2
+var b = 3
+var c = 2
+
+if(a == b || a == c || b == c){
+    print("At least two variables have the same value")
+}
+    else{
+    print("All the values are different")
+}
 ```
 
 ***
@@ -68,7 +103,25 @@ You are working on a smart-fridge. The smart-fridge knows how old the eggs and b
 var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
-// your code here
+//
+
+var baconAge = 6 // the bacon is 6 days old
+var eggsAge = 30// eggs are 12 days old
+
+
+if baconAge < 7 && eggsAge < 21{
+print("you can cook both")
+}
+else if baconAge < 7 && eggsAge > 21{
+print("You can only cook bacon throw out eggs")
+}
+else if eggsAge < 21 && baconAge > 7{
+print("You can only cook egss throw out bacon")
+}
+else{
+print("throw both")
+}
+
 ```
 
 ***
@@ -80,7 +133,14 @@ The above rule is valid except that every 100 years special rules apply. Years t
 ```swift
 let year = 2014
 
-// your code here
+// let year = 2014
+if year % 4 == 0 && year % 100 != 0 || year % 400 == 0{
+    print("leap year")
+} 
+    else{
+        print("Not leap year")
+}
+    
 ```
 
 ***
@@ -91,7 +151,13 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
+// let randomNum = Int.random(in: 0...100)
+if randomNum % 2 == 0{
+print("It's Heads")
+}
+else{
+print("It's Tails")
+}
 ```
 
 Hint: use an if/else block along with the `%` operator
@@ -107,7 +173,14 @@ var b = 6
 var c = 3
 var d = 4
 
-// your code here
+// var a = 5
+var b = 6
+var c = 3
+var d = 4
+
+var nums = [5,6,3,4]
+var smallNum = nums.min()
+print(smallNum as Any)
 ```
 
 ***
